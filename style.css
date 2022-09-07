@@ -1,0 +1,200 @@
+/*Fontes*/
+@font-face {
+    font-family: 'Eurostile';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Eurostile'), url('eurostile.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'EuropaNuova-Regular Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('EuropaNuova-Regular Regular'), url('EuropaNuovaRegular.woff') format('woff');
+}
+
+/*Cabeca do site*/
+
+.avatar {
+    max-width: 340px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/*Imagem fofa*/
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.header{
+    padding-left: 80%;
+    padding-top: 2.5%;
+}
+
+
+.divFundo {
+     text-align: right;
+    font-family: 'EuropaNuova-Regular Regular', sans-serif;
+    color: #000000;
+    font-weight: normal;
+    padding-top: 5%;
+}
+
+ button {
+    font-family: "EuropaNuova-Regular Regular", sans-serif;
+    font-size: 18px;
+    background: transparent;
+    color: #000000;
+    border: solid #000000;
+    border-radius: 9999px;
+    text-shadow: none;
+    transition: 0.5s;
+    border-width: 2px;
+    margin-top: 2%;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: calc(0.75em - 1px);
+    padding-right: calc(0.75em - 1px);
+    padding-top: calc(0.5em - 1px);
+    justify-content: center;
+
+} 
+
+button:hover {
+    font-size: 18px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 9999px;
+    text-shadow: none;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+.apresentacao{
+    color: #ffffff;
+    padding-top: 10%;
+    
+}
+.apresentacaoH2{
+    color: #ffffff;
+}
+
+.divFundo {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.divFundo2 {
+    background-color: black;
+    
+}
+
+h1 {
+    font-family: 'Eurostile', sans-serif;
+    color: #2B2D42;
+    font-size: 80px;
+    
+}
+
+h2 {
+    font-family: 'EuropaNuova-Regular Regular', sans-serif;
+    color: #000000;
+    font-weight: normal;
+    font-size: 45px;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #ffffff;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #2B2D42;
+    /* border-radius: 20px; */
+    border: 3px solid #F8F32B;
+}
+
+/*modal teste*/
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: 'Eurostile', sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  .modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #ffffff;
+    color: #8D99AE;
+    
+  }
+  .fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #2B2D42;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Eurostile', sans-serif;
+  }
+
+  .imagemPequena{
+    max-width: 34px;
+    max-height: 34px;
+    float: left;
+    padding-right: 1%;
+  }
+  .noSublime{
+    text-decoration: none;
+  }
+
+  td {
+    padding-left: 5%;
+    padding-bottom: 5%;
+  }
